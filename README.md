@@ -1,1 +1,1 @@
-# Mysa frontend performance study
+# Mysa frontend
