@@ -1,0 +1,40 @@
+# Dependencies and build output
+/node_modules/
+/dist/
+/.astro/
+/.cache/
+*.tsbuildinfo
+
+# Local performance studies, reference captures, screenshots and diagnostics
+/reports/
+/reference/
+/test-results/
+/playwright-report/
+/coverage/
+/scripts/local/
+/src/data/asset-manifest.json
+/src/data/image-dimensions.json
+/src/data/optimized.json
+
+# One-time authoring utilities; keep them locally alongside ignored captures
+/scripts/*.py
+/scripts/optimize.mjs
+/scripts/image-dimensions.mjs
+/scripts/separate-reference.mjs
+/scripts/report-study.mjs
+/scripts/readable-reports.mjs
+/scripts/visual-matrix.mjs
+
+# Machine-specific settings, secrets and temporary files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+desktop.ini
+/.idea/
+/.vscode/

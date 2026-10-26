@@ -1,0 +1,31 @@
+---
+import Layout from '@/layouts/SiteLayout.astro';
+import Navigation_3ca585bd from '@/components/shared/Navigation_3ca585bd.astro';
+import DemoModal_05aeaf84 from '@/components/shared/DemoModal_05aeaf84.astro';
+import Section2 from '@/components/pages/sap-integration/section_product_hero_2.astro';
+import Section3 from '@/components/pages/sap-integration/section_3.astro';
+import Section4 from '@/components/pages/sap-integration/section_31_4.astro';
+import Section5 from '@/components/pages/sap-integration/section_solution_cta_5.astro';
+import Footer_0eb7a9ba from '@/components/shared/Footer_0eb7a9ba.astro';
+const metadata = {
+  title: 'SAP Integration',
+  description:
+    'Streamline bill submissions with Mysa’s Slack integration. Upload, review, and track bills directly in Slack—fast, secure, and hassle-free. Simplify your finance workflows today.',
+  bodyClass: '',
+  stylesheets: [
+    '/styles/918fb71a1122fc1e.css',
+    '/styles/39bc4941d9618aab.css',
+    '/styles/pages/sap-integration.css',
+  ],
+};
+---
+
+<Layout {...metadata}>
+  <Navigation_3ca585bd />
+  <DemoModal_05aeaf84 />
+  <Section2 />
+  <Section3 />
+  <Section4 />
+  <Section5 />
+  <Footer_0eb7a9ba />
+</Layout>

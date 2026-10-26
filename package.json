@@ -1,0 +1,28 @@
+{
+  "name": "mysa-performance-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/runtime.mjs astro dev --host 127.0.0.1",
+    "build": "node scripts/runtime.mjs astro build",
+    "preview": "node scripts/runtime.mjs astro preview --host 127.0.0.1",
+    "check": "node scripts/runtime.mjs astro check",
+    "capture": "node scripts/capture.mjs",
+    "test": "node scripts/verify.mjs",
+    "benchmark": "node scripts/runtime.mjs scripts/benchmark.mjs",
+    "serve:study": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "lighthouse": "12.8.2",
+    "playwright": "^1.56.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.34.5",
+    "typescript": "~5.9.3"
+  }
+}

@@ -1,0 +1,35 @@
+---
+import Layout from '@/layouts/SiteLayout.astro';
+import Navigation_3336f260 from '@/components/shared/Navigation_3336f260.astro';
+import Section1 from '@/components/pages/expense-management/section_29_1.astro';
+import Section2 from '@/components/pages/expense-management/section_27_2.astro';
+import Section3 from '@/components/pages/expense-management/section_3.astro';
+import Section4 from '@/components/pages/expense-management/section_40_4.astro';
+import Section5 from '@/components/pages/expense-management/section_31_5.astro';
+import Section6 from '@/components/pages/expense-management/section_6.astro';
+import Section7 from '@/components/pages/expense-management/section_solution_cta_7.astro';
+import Footer_eaa50f29 from '@/components/shared/Footer_eaa50f29.astro';
+const metadata = {
+  title: 'Module - Expense Management',
+  description:
+    'Mysa’s Smart Banking enables secure, RBI-compliant payments with MFA, auto-reconciliation, and vendor bank verification across 700+ banks.',
+  bodyClass: '',
+  stylesheets: [
+    '/styles/918fb71a1122fc1e.css',
+    '/styles/39bc4941d9618aab.css',
+    '/styles/pages/expense-management.css',
+  ],
+};
+---
+
+<Layout {...metadata}>
+  <Navigation_3336f260 />
+  <Section1 />
+  <Section2 />
+  <Section3 />
+  <Section4 />
+  <Section5 />
+  <Section6 />
+  <Section7 />
+  <Footer_eaa50f29 />
+</Layout>

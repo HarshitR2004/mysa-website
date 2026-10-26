@@ -1,0 +1,217 @@
+[
+  {
+    "path": "/",
+    "key": "home",
+    "kind": "marketing"
+  },
+  {
+    "path": "/product",
+    "key": "product",
+    "kind": "marketing"
+  },
+  {
+    "path": "/accounts-payable",
+    "key": "accounts-payable",
+    "kind": "marketing"
+  },
+  {
+    "path": "/integrated-banking",
+    "key": "integrated-banking",
+    "kind": "marketing"
+  },
+  {
+    "path": "/ai-accounting",
+    "key": "ai-accounting",
+    "kind": "marketing"
+  },
+  {
+    "path": "/expense-management",
+    "key": "expense-management",
+    "kind": "marketing"
+  },
+  {
+    "path": "/ai-scan",
+    "key": "ai-scan",
+    "kind": "marketing"
+  },
+  {
+    "path": "/security",
+    "key": "security",
+    "kind": "marketing"
+  },
+  {
+    "path": "/reports-and-insights",
+    "key": "reports-and-insights",
+    "kind": "marketing"
+  },
+  {
+    "path": "/audit-trails",
+    "key": "audit-trails",
+    "kind": "marketing"
+  },
+  {
+    "path": "/team",
+    "key": "team",
+    "kind": "marketing"
+  },
+  {
+    "path": "/annual-day",
+    "key": "annual-day",
+    "kind": "marketing"
+  },
+  {
+    "path": "/book-a-demo",
+    "key": "book-a-demo",
+    "kind": "marketing"
+  },
+  {
+    "path": "/privacy-policy",
+    "key": "privacy-policy",
+    "kind": "marketing"
+  },
+  {
+    "path": "/terms-of-service",
+    "key": "terms-of-service",
+    "kind": "marketing"
+  },
+  {
+    "path": "/blogs",
+    "key": "blogs",
+    "kind": "marketing"
+  },
+  {
+    "path": "/glossary",
+    "key": "glossary",
+    "kind": "marketing"
+  },
+  {
+    "path": "/whats-new",
+    "key": "whats-new",
+    "kind": "marketing"
+  },
+  {
+    "path": "/customers",
+    "key": "customers",
+    "kind": "marketing"
+  },
+  {
+    "path": "/slack-integration",
+    "key": "slack-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/solution/d2c-manufacturing",
+    "key": "solution__d2c-manufacturing",
+    "kind": "marketing"
+  },
+  {
+    "path": "/solution/tech-startups-digital-services",
+    "key": "solution__tech-startups-digital-services",
+    "kind": "marketing"
+  },
+  {
+    "path": "/solution/b2c-quick-commerce",
+    "key": "solution__b2c-quick-commerce",
+    "kind": "marketing"
+  },
+  {
+    "path": "/solution/multi-outlet-restaurants",
+    "key": "solution__multi-outlet-restaurants",
+    "kind": "marketing"
+  },
+  {
+    "path": "/erpnext-integration",
+    "key": "erpnext-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/zoho-books-integration",
+    "key": "zoho-books-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/tally-integration",
+    "key": "tally-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/netsuite-integration",
+    "key": "netsuite-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/microsoft-dynamics-integration",
+    "key": "microsoft-dynamics-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/sap-integration",
+    "key": "sap-integration",
+    "kind": "marketing"
+  },
+  {
+    "path": "/customers/gostops",
+    "key": "customers__gostops",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/vaaree",
+    "key": "customers__vaaree",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/hanto",
+    "key": "customers__hanto",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/drink-prime",
+    "key": "customers__drink-prime",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/dhan",
+    "key": "customers__dhan",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/guru-and-jana",
+    "key": "customers__guru-and-jana",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/augnito",
+    "key": "customers__augnito",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/swish-procurement-payment-integration-case-study",
+    "key": "customers__swish-procurement-payment-integration-case-study",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/planb",
+    "key": "customers__planb",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/swish",
+    "key": "customers__swish",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/rigi",
+    "key": "customers__rigi",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/kouzina",
+    "key": "customers__kouzina",
+    "kind": "story"
+  },
+  {
+    "path": "/customers/dpdzero",
+    "key": "customers__dpdzero",
+    "kind": "story"
+  }
+]

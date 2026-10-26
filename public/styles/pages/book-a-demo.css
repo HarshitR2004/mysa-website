@@ -1,0 +1,192 @@
+
+  a.bad-button { display: none !important; }
+
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+  }
+  .navbar_component.is-hidden { transform: translateY(-100%); }
+  .navbar_component.is-open,
+  .navbar_component.is-over-section { transform: translateY(-100%); }
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mod-1--hidden { display: none !important; }
+@media (max-width: 767px) {
+  #meet-status,
+  #mysa-injected-heading,
+  #meet-link-container { margin-left: -170px !important; }
+  #meet-link-container a,
+  #meet-link-container div {
+    width: fit-content !important;
+    min-width: 200px !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .fignav-container { position: relative; }
+  .fignav-mega-panel {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    z-index: 30 !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-list,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-list {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-toggle,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-toggle {
+    color: inherit;
+  }
+}
+
+
+.bd4-dot-ribbon-wrap{
+  position:absolute;
+  top:-18rem;
+  right:-5rem;
+  width:35.25rem;
+  height:35.25rem;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+}
+@media (max-width: 767px){
+  .bd4-dot-ribbon-wrap{ display:none; }
+}
+.bd4-dot-ribbon-rotate{
+  position:relative;
+  width:29.8rem;   /* same wrap-to-ribbon ratio as the original (861.5 / 1019.3) */
+  height:29.8rem;
+  /* Keep in sync with ROTATE_DEG / MIRRORED in the script below */
+  transform:rotate(8deg) scaleX(-1);
+  flex-shrink:0;
+}
+#bd4-dot-ribbon-svg{
+  position:absolute;
+  inset:0;
+  background:transparent;
+}
+#bd4-dot-ribbon-svg svg{
+  display:block;
+  width:100%;
+  height:100%;
+  background:transparent;
+}
+
+
+  /* Story cards: 8 cards cross-fading in the same box.
+     The incoming card fades in ON TOP of the outgoing one, which stays
+     fully visible underneath until the fade finishes (no dim midpoint). */
+  #cs-stories-stage .cs-content-container .cs-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0s linear 1.4s;
+  }
+  #cs-stories-stage .cs-content-container .cs-content-container.cs-content-is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+    transition: opacity 1.4s cubic-bezier(.4,0,.2,1);
+  }
+  html.bd4-snap #cs-stories-stage .cs-content-container .cs-content-container {
+    transition: none !important;
+  }
+
+  /* Logo grid fallback (before the script runs): only the active set shows.
+     Once the script runs it controls every logo directly. */
+  #cs-logo-stage-right > .cs-logo-group { opacity: 0; pointer-events: none; }
+  #cs-logo-stage-right > .cs-logo-group.cs-logo-is-visible { opacity: 1; pointer-events: auto; }
+  #cs-logo-stage-right .cs-image-wrapper > * { will-change: opacity; backface-visibility: hidden; }
+
+  #cs-stories-stage .cs-popup { display: none !important; }
+
+  /* Demo focus options: selected state */
+  .bd4_option {
+    transition: border-color .2s ease, background-color .2s ease;
+  }
+  .bd4_option .bd4_option-text {
+    transition: color .2s ease;
+  }
+  .bd4_option:has(.bd4_checkbox:checked) {
+    border-color: #4aa597;
+    background-color: #effaf8;
+  }
+  .bd4_option:has(.bd4_checkbox:checked) .bd4_option-text {
+    color: #1f4a44;
+  }
+  /* Hovering a selected option darkens its checkbox */
+  .bd4_option:hover .bd4_checkbox:checked {
+    accent-color: #0d2622;
+  }
+  .bd4_option:has(.bd4_checkbox:focus-visible) {
+    outline: 2px solid #4aa597;
+    outline-offset: 2px;
+  }
+
+  /* Demo focus options: error state (none selected on submit) */
+  #checkbox-grid.is-error .bd4_option {
+    border-color: #DC2626;
+    background-color: #FEF2F2;
+  }
+  #checkbox-error {
+    margin-top: -0.5rem;
+  }
+
+  /* Form text fields: floating labels (CSS layer; the script below
+     also sets the same values directly on each label, so it works
+     even if another stylesheet would override these rules). */
+  .bd4_field:focus-within .bd4_float-label {
+    top: .3125rem; font-size: .6875rem; line-height: .875rem; color: #79716b;
+  }
+  .bd4_field.is-filled .bd4_float-label {
+    top: .3125rem; font-size: .6875rem; line-height: .875rem; color: #79716b;
+  }
+  .bd4_field:has(.bd4_input.error) .bd4_float-label {
+    color: #DC2626;
+  }
+
+  @media (max-width: 767px) {
+    #cs-stories-stage .cs-cards-container { flex-direction: column !important; }
+    #cs-stories-stage .cs-content-container.bd4-fit,
+    #cs-logo-stage-right.bd4-grid { width: 100% !important; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #cs-stories-stage .cs-content-container .cs-content-container { transition: none !important; }
+  }
+
+
+#name.error,
+#email.error,
+#phone.error,
+#Company-Name.error {
+    border-color: #DC2626 !important;
+    background-color: #FEF2F2;
+}

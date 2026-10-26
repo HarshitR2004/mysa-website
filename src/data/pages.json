@@ -1,0 +1,524 @@
+[
+  {
+    "path": "/",
+    "key": "home",
+    "kind": "marketing",
+    "title": "Mysa | AI Native: AP, Procurement, Accounting & Banking",
+    "sections": 14,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/home.css"
+    ]
+  },
+  {
+    "path": "/product",
+    "key": "product",
+    "kind": "marketing",
+    "title": "Business Financial Management Software | Mysa",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/product.css"
+    ]
+  },
+  {
+    "path": "/accounts-payable",
+    "key": "accounts-payable",
+    "kind": "marketing",
+    "title": "Vendor Payment Portal with Accounts Payable Automation and Security | Mysa",
+    "sections": 8,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/accounts-payable.css"
+    ]
+  },
+  {
+    "path": "/integrated-banking",
+    "key": "integrated-banking",
+    "kind": "marketing",
+    "title": "Integrated Banking Accounts to Simplify Corporate Payments | Mysa",
+    "sections": 11,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/integrated-banking.css"
+    ]
+  },
+  {
+    "path": "/ai-accounting",
+    "key": "ai-accounting",
+    "kind": "marketing",
+    "title": "AI Accounting Software | Mysa",
+    "sections": 8,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/ai-accounting.css"
+    ]
+  },
+  {
+    "path": "/expense-management",
+    "key": "expense-management",
+    "kind": "marketing",
+    "title": "Module - Expense Management",
+    "sections": 9,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/expense-management.css"
+    ]
+  },
+  {
+    "path": "/ai-scan",
+    "key": "ai-scan",
+    "kind": "marketing",
+    "title": "AI Scan",
+    "sections": 8,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/ai-scan.css"
+    ]
+  },
+  {
+    "path": "/security",
+    "key": "security",
+    "kind": "marketing",
+    "title": "Security",
+    "sections": 8,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/security.css"
+    ]
+  },
+  {
+    "path": "/reports-and-insights",
+    "key": "reports-and-insights",
+    "kind": "marketing",
+    "title": "Reports and Insights",
+    "sections": 5,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/reports-and-insights.css"
+    ]
+  },
+  {
+    "path": "/audit-trails",
+    "key": "audit-trails",
+    "kind": "marketing",
+    "title": "Audit Trails",
+    "sections": 5,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/audit-trails.css"
+    ]
+  },
+  {
+    "path": "/team",
+    "key": "team",
+    "kind": "marketing",
+    "title": "Mysa Team",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/68136f0859f881a5.css",
+      "/styles/pages/team.css"
+    ]
+  },
+  {
+    "path": "/annual-day",
+    "key": "annual-day",
+    "kind": "marketing",
+    "title": "Annual Day",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/68136f0859f881a5.css",
+      "/styles/pages/annual-day.css"
+    ]
+  },
+  {
+    "path": "/book-a-demo",
+    "key": "book-a-demo",
+    "kind": "marketing",
+    "title": "Book a Demo",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/book-a-demo.css"
+    ]
+  },
+  {
+    "path": "/privacy-policy",
+    "key": "privacy-policy",
+    "kind": "marketing",
+    "title": "Privacy Policy",
+    "sections": 5,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/privacy-policy.css"
+    ]
+  },
+  {
+    "path": "/terms-of-service",
+    "key": "terms-of-service",
+    "kind": "marketing",
+    "title": "Terms of Service",
+    "sections": 4,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/terms-of-service.css"
+    ]
+  },
+  {
+    "path": "/blogs",
+    "key": "blogs",
+    "kind": "marketing",
+    "title": "Mysa Blogs | Finance, Banking & Tax Tips for Startups",
+    "sections": 2,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/blogs.css"
+    ]
+  },
+  {
+    "path": "/glossary",
+    "key": "glossary",
+    "kind": "marketing",
+    "title": "Comprehensive Banking and Finance Glossary | Mysa",
+    "sections": 2,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/glossary.css"
+    ]
+  },
+  {
+    "path": "/whats-new",
+    "key": "whats-new",
+    "kind": "marketing",
+    "title": "What's new",
+    "sections": 2,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/whats-new.css"
+    ]
+  },
+  {
+    "path": "/customers",
+    "key": "customers",
+    "kind": "marketing",
+    "title": "Customers",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers.css"
+    ]
+  },
+  {
+    "path": "/slack-integration",
+    "key": "slack-integration",
+    "kind": "marketing",
+    "title": "Slack-integration",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/slack-integration.css"
+    ]
+  },
+  {
+    "path": "/solution/d2c-manufacturing",
+    "key": "solution__d2c-manufacturing",
+    "kind": "marketing",
+    "title": "Mysa for D2C and Manufacturing",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/solution__d2c-manufacturing.css"
+    ]
+  },
+  {
+    "path": "/solution/tech-startups-digital-services",
+    "key": "solution__tech-startups-digital-services",
+    "kind": "marketing",
+    "title": "Mysa for Tech Startups & Digital Services",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/solution__tech-startups-digital-services.css"
+    ]
+  },
+  {
+    "path": "/solution/b2c-quick-commerce",
+    "key": "solution__b2c-quick-commerce",
+    "kind": "marketing",
+    "title": "Mysa for B2C and Quick Commerce",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/solution__b2c-quick-commerce.css"
+    ]
+  },
+  {
+    "path": "/solution/multi-outlet-restaurants",
+    "key": "solution__multi-outlet-restaurants",
+    "kind": "marketing",
+    "title": "Multi-Outlet Restaurants",
+    "sections": 10,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/solution__multi-outlet-restaurants.css"
+    ]
+  },
+  {
+    "path": "/erpnext-integration",
+    "key": "erpnext-integration",
+    "kind": "marketing",
+    "title": "ERP Next Integration",
+    "sections": 9,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/erpnext-integration.css"
+    ]
+  },
+  {
+    "path": "/zoho-books-integration",
+    "key": "zoho-books-integration",
+    "kind": "marketing",
+    "title": "Zoho Books Integration",
+    "sections": 11,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/zoho-books-integration.css"
+    ]
+  },
+  {
+    "path": "/tally-integration",
+    "key": "tally-integration",
+    "kind": "marketing",
+    "title": "Tally Integration",
+    "sections": 11,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/tally-integration.css"
+    ]
+  },
+  {
+    "path": "/netsuite-integration",
+    "key": "netsuite-integration",
+    "kind": "marketing",
+    "title": "NetSuite Integration",
+    "sections": 7,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/netsuite-integration.css"
+    ]
+  },
+  {
+    "path": "/microsoft-dynamics-integration",
+    "key": "microsoft-dynamics-integration",
+    "kind": "marketing",
+    "title": "MS Dynamics Integration",
+    "sections": 7,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/microsoft-dynamics-integration.css"
+    ]
+  },
+  {
+    "path": "/sap-integration",
+    "key": "sap-integration",
+    "kind": "marketing",
+    "title": "SAP Integration",
+    "sections": 7,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/sap-integration.css"
+    ]
+  },
+  {
+    "path": "/customers/gostops",
+    "key": "customers__gostops",
+    "kind": "story",
+    "title": "How GoStops Cut Book Closing Time by 3-4 days on just reco",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__gostops.css"
+    ]
+  },
+  {
+    "path": "/customers/vaaree",
+    "key": "customers__vaaree",
+    "kind": "story",
+    "title": "",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__vaaree.css"
+    ]
+  },
+  {
+    "path": "/customers/hanto",
+    "key": "customers__hanto",
+    "kind": "story",
+    "title": "How Hanto Manages Crores of Monthly Payments Across 30+ Cost Centers",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__hanto.css"
+    ]
+  },
+  {
+    "path": "/customers/drink-prime",
+    "key": "customers__drink-prime",
+    "kind": "story",
+    "title": "Drink Prime Scales Payments with Mysa | Case Study",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__drink-prime.css"
+    ]
+  },
+  {
+    "path": "/customers/dhan",
+    "key": "customers__dhan",
+    "kind": "story",
+    "title": "How Dhan Uses Mysa as Its Audit Controller",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__dhan.css"
+    ]
+  },
+  {
+    "path": "/customers/guru-and-jana",
+    "key": "customers__guru-and-jana",
+    "kind": "story",
+    "title": "Payment Processing Success Story | Guru Jana Case Study",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__guru-and-jana.css"
+    ]
+  },
+  {
+    "path": "/customers/augnito",
+    "key": "customers__augnito",
+    "kind": "story",
+    "title": "Augnito Case Study: Streamlined Bill Management & Automation",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__augnito.css"
+    ]
+  },
+  {
+    "path": "/customers/swish-procurement-payment-integration-case-study",
+    "key": "customers__swish-procurement-payment-integration-case-study",
+    "kind": "story",
+    "title": "Procurement to Payment Automation Case Study:Mysa+Shoptree",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__swish-procurement-payment-integration-case-study.css"
+    ]
+  },
+  {
+    "path": "/customers/planb",
+    "key": "customers__planb",
+    "kind": "story",
+    "title": "How PlanB Simplified Bill processing and Payments",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__planb.css"
+    ]
+  },
+  {
+    "path": "/customers/swish",
+    "key": "customers__swish",
+    "kind": "story",
+    "title": "Swish redefines financial efficiency and growth with Mysa",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__swish.css"
+    ]
+  },
+  {
+    "path": "/customers/rigi",
+    "key": "customers__rigi",
+    "kind": "story",
+    "title": "From Financial Bottlenecks to Seamless Execution: Rigi’s Game-Changing Shift with Mysa",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__rigi.css"
+    ]
+  },
+  {
+    "path": "/customers/kouzina",
+    "key": "customers__kouzina",
+    "kind": "story",
+    "title": "How Mysa helped Kouzina streamline their finance",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__kouzina.css"
+    ]
+  },
+  {
+    "path": "/customers/dpdzero",
+    "key": "customers__dpdzero",
+    "kind": "story",
+    "title": "How Mysa helped DPD Zero streamline their finances",
+    "sections": 1,
+    "stylesheets": [
+      "/styles/918fb71a1122fc1e.css",
+      "/styles/39bc4941d9618aab.css",
+      "/styles/pages/customers__dpdzero.css"
+    ]
+  }
+]

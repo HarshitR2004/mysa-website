@@ -1,0 +1,27 @@
+---
+import Layout from '@/layouts/SiteLayout.astro';
+import Navigation_9b14fc91 from '@/components/shared/Navigation_9b14fc91.astro';
+import Section1 from '@/components/pages/audit-trails/section_36_1.astro';
+import Section2 from '@/components/pages/audit-trails/section_33_2.astro';
+import Section3 from '@/components/pages/audit-trails/section_solution_cta_3.astro';
+import Footer_779e707a from '@/components/shared/Footer_779e707a.astro';
+const metadata = {
+  title: 'Audit Trails',
+  description:
+    'Streamline bill submissions with Mysa’s Slack integration-upload, review, and track bills in Slack for fast, secure, hassle-free finance workflows.',
+  bodyClass: '',
+  stylesheets: [
+    '/styles/918fb71a1122fc1e.css',
+    '/styles/39bc4941d9618aab.css',
+    '/styles/pages/audit-trails.css',
+  ],
+};
+---
+
+<Layout {...metadata}>
+  <Navigation_9b14fc91 />
+  <Section1 />
+  <Section2 />
+  <Section3 />
+  <Footer_779e707a />
+</Layout>

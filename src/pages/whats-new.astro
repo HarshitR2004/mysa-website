@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/SiteLayout.astro';
+import Section1 from '@/components/pages/whats-new/page_wrapper_1.astro';
+import Section2 from '@/components/pages/whats-new/popup_modal_all_pages_2.astro';
+const metadata = {
+  title: "What's new",
+  description:
+    'Explore Mysa’s latest releases-new features and enhancements to streamline accounts payable and business finance operations.',
+  bodyClass: '',
+  stylesheets: [
+    '/styles/918fb71a1122fc1e.css',
+    '/styles/39bc4941d9618aab.css',
+    '/styles/pages/whats-new.css',
+  ],
+};
+---
+
+<Layout {...metadata}>
+  <Section1 />
+  <Section2 />
+</Layout>

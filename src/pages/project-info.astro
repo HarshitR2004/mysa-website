@@ -1,0 +1,57 @@
+---
+const routes = Object.keys(import.meta.glob('./**/*.astro')).length;
+---
+
+<!doctype html>
+<html lang="en">
+  <head
+    ><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><meta
+      name="robots"
+      content="noindex,nofollow"
+    /><title>About this unofficial Mysa prototype</title></head
+  ><body
+    ><main>
+      <p>Independent engineering study</p><h1>A faithful frontend, with less browser work.</h1><p>
+        This is an unofficial internship portfolio project. Mysa’s brand, content and assets belong
+        to their respective owners. This prototype is not operated by Mysa.
+      </p><p>
+        The Astro build recreates the current marketing pages. Booking forms validate locally; no
+        information is sent and no appointments are booked. Login and external resources lead to the
+        official services.
+      </p><h2>What changed</h2><ul>
+        <li>Static Astro components replace the Webflow client runtime.</li><li>
+          Dot artwork uses external images and pointer-driven canvas instead of thousands of live
+          SVG circles.
+        </li><li>Videos load only when visible at the active breakpoint.</li><li>
+          Fonts and artwork are served locally; production tracking is omitted.
+        </li>
+      </ul><p>
+        Read the repository’s case study and raw reports for measured results and limitations.
+        Performance targets are not a guarantee.
+      </p><p>{routes} source routes. <a href="/">Open the prototype →</a></p>
+    </main></body>
+</html>
+<style>
+  body {
+    margin: 0;
+    background: #f5faf8;
+    color: #173a34;
+    font: 18px/1.65 system-ui;
+  }
+  main {
+    max-width: 760px;
+    margin: 80px auto;
+    padding: 24px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+  }
+  h2 {
+    margin-top: 40px;
+  }
+  a {
+    color: #006b5e;
+  }
+</style>

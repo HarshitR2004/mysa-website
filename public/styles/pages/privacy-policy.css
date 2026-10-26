@@ -1,0 +1,277 @@
+
+  a.bad-button { display: none !important; }
+
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+  }
+  .navbar_component.is-hidden { transform: translateY(-100%); }
+  .navbar_component.is-open,
+  .navbar_component.is-over-section { transform: translateY(-100%); }
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mod-1--hidden { display: none !important; }
+@media (max-width: 767px) {
+  #meet-status,
+  #mysa-injected-heading,
+  #meet-link-container { margin-left: -170px !important; }
+  #meet-link-container a,
+  #meet-link-container div {
+    width: fit-content !important;
+    min-width: 200px !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .fignav-container { position: relative; }
+  .fignav-mega-panel {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    z-index: 30 !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-list,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-list {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-toggle,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-toggle {
+    color: inherit;
+  }
+}
+
+
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hack9-custom-dot.active .home-builder_sliderdot-image {
+  transform: scale(1.2, 1.2);
+}
+
+.is-disabled {
+ opacity: 0.4;
+}
+
+.nav_dropdown-link:hover .nav_dropdown-icon-wrap {
+background-color: #ffffff !important;
+}
+
+
+
+.mysa-doc{--tnr:'Times New Roman',Times,'Liberation Serif',serif;--cal:Calibri,Carlito,'Segoe UI',Arial,sans-serif;--ari:Arial,'Liberation Sans',Helvetica,sans-serif;box-sizing:border-box;max-width:8.5in;margin:0 auto;padding:.5in 1in;background:#fff;color:#000;font:11pt/1.15 var(--ari);text-size-adjust:100%;overflow-wrap:break-word} .mysa-doc *{box-sizing:border-box} .mysa-doc p{margin:0} .mysa-doc a{color:#1155cc} .mysa-doc a span{color:inherit!important} .mysa-doc img{max-width:100%;height:auto}
+.mysa-doc .d-body,.mysa-doc .d-hdr{display:flex;flex-direction:column} .mysa-doc .d-hdr{margin-bottom:1in} .mysa-doc .d-ftr{margin-top:.5in} .mysa-doc .d-bul{display:inline-block;text-indent:0;font-size:.75em;vertical-align:.12em} .mysa-doc .d-tab{display:inline-block;width:.5in} .mysa-doc .d-tblwrap{overflow-x:auto} .mysa-doc .d-tbl{border-collapse:collapse;table-layout:fixed} .mysa-doc .d-tbl td{overflow-wrap:normal} @media (min-width:701px){.mysa-doc .d-tblwrap{margin:0 -24pt}} @media (max-width:700px){.mysa-doc{padding:24px 18px} .mysa-doc .d-hdr{margin-bottom:24px}}
+.mysa-doc .p1{font-family:var(--cal);font-size:11pt;font-weight:bold;color:#999999;margin:0pt 0 8pt 0;line-height:1.241;text-align:center} .mysa-doc .p2{font-family:var(--cal);font-size:12pt;font-weight:bold;margin:0pt 0 10pt 0;line-height:1.322;text-align:center} .mysa-doc .p3{font-family:var(--cal);font-size:11pt;font-weight:bold;margin:0pt 0 10pt 0;line-height:1.322;text-align:justify} .mysa-doc .p4{font-family:var(--tnr);font-size:11pt;font-weight:bold;line-height:1.150;padding-left:180pt;text-align:left} .mysa-doc .p5{font-family:var(--tnr);font-size:11pt;font-weight:bold;line-height:1.150;text-align:justify} .mysa-doc .p6{font-family:var(--tnr);font-size:11pt;line-height:1.150;text-align:justify} .mysa-doc .p7{font-family:var(--tnr);font-size:11pt;line-height:1.150;padding-left:36pt;text-align:justify} .mysa-doc .p8{font-family:var(--tnr);font-size:11pt;font-weight:bold;color:#1d1c1d;margin:3pt 0 3pt 0;line-height:1.150;text-align:justify} .mysa-doc .p9{font-family:var(--tnr);font-size:11pt;color:#1d1c1d;margin:3pt 0 3pt 0;line-height:1.150;text-align:justify} .mysa-doc .p10{font-family:var(--tnr);font-size:11pt;color:#1d1c1d;margin:5pt 0 0pt 0;line-height:1.150;padding-left:54pt;text-indent:-18pt;text-align:left} .mysa-doc .p11{font-family:var(--tnr);font-size:11pt;color:#1d1c1d;line-height:1.150;padding-left:54pt;text-indent:-18pt;text-align:left} .mysa-doc .p12{font-family:var(--tnr);font-size:11pt;color:#1d1c1d;margin:0pt 0 5pt 0;line-height:1.150;padding-left:54pt;text-indent:-18pt;text-align:left} .mysa-doc .p13{font-family:var(--tnr);font-size:14pt;font-weight:bold;margin:16pt 0 4pt 0;line-height:1.150;text-align:justify} .mysa-doc .p14{font-family:var(--cal);font-size:11pt;font-weight:bold;margin:0pt 0 10pt 0;line-height:1.322;text-align:center} .mysa-doc .p15{font-family:var(--cal);font-size:11pt;margin:0pt 0 10pt 0;line-height:1.322;text-align:left} .mysa-doc .p16{font-family:var(--cal);font-size:11pt;margin:0pt 0 10pt 0;line-height:1.322;text-align:center} .mysa-doc .p17{font-family:var(--cal);font-size:11pt;font-weight:bold;color:#999999;line-height:1.150;text-align:left}
+.mysa-doc .t1{padding:0pt 5.75pt 0pt 5.75pt;background:#b8cce4;vertical-align:top;border-top:1.5pt solid #000;border-bottom:.75pt solid #000;border-left:1.5pt solid #000;border-right:.75pt solid #000} .mysa-doc .t2{padding:0pt 5.75pt 0pt 5.75pt;background:#b8cce4;vertical-align:top;border-top:1.5pt solid #000;border-bottom:.75pt solid #000;border-left:.75pt solid #000;border-right:.75pt solid #000} .mysa-doc .t3{padding:0pt 5.75pt 0pt 5.75pt;background:#b8cce4;vertical-align:top;border-top:1.5pt solid #000;border-bottom:.75pt solid #000;border-left:.75pt solid #000;border-right:1.5pt solid #000} .mysa-doc .t4{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:top;border-top:.75pt solid #000;border-bottom:.75pt solid #000;border-left:1.5pt solid #000;border-right:.75pt solid #000} .mysa-doc .t5{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:top;border-top:.75pt solid #000;border-bottom:.75pt solid #000;border-left:.75pt solid #000;border-right:.75pt solid #000} .mysa-doc .t6{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:middle;border-top:.75pt solid #000;border-bottom:.75pt solid #000;border-left:.75pt solid #000;border-right:.75pt solid #000} .mysa-doc .t7{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:middle;border-top:.75pt solid #000;border-bottom:.75pt solid #000;border-left:.75pt solid #000;border-right:1.5pt solid #000} .mysa-doc .t8{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:top;border-top:.75pt solid #000;border-bottom:.75pt solid #000;border-left:1.5pt solid #000;border-right:1.5pt solid #000} .mysa-doc .t9{padding:0pt 5.75pt 0pt 5.75pt;vertical-align:top;border-top:.75pt solid #000;border-bottom:none;border-left:none;border-right:none}

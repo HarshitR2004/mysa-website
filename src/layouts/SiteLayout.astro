@@ -1,0 +1,64 @@
+---
+import '../styles/enhancements.css';
+import assets from '../data/assets.json';
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+  stylesheets: string[];
+}
+const { title, description = '', bodyClass = '', stylesheets } = Astro.props;
+const fonts = Object.entries(assets)
+  .filter(([url]) => url.includes('NeueHaasDisplayRoman.ttf'))
+  .map(([, path]) => path.replace('.ttf', '.woff2'));
+const isHome = Astro.url.pathname === '/';
+const poster = Object.entries(assets).find(
+  ([url]) => url.includes('6aa2e5454c0090fb199bb3d9') && url.includes('poster'),
+)?.[1];
+---
+
+<!doctype html>
+<html lang="en" class="w-mod-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={description} />
+    <meta name="generator" content="Astro — unofficial Mysa performance study" />
+    <title>{title}</title>
+    {
+      fonts.map((font) => (
+        <link rel="preload" href={font} as="font" type="font/woff2" crossorigin />
+      ))
+    }
+    {
+      isHome && poster && (
+        <link
+          rel="preload"
+          href={poster}
+          as="image"
+          media="(min-width: 768px)"
+          fetchpriority="high"
+        />
+      )
+    }
+    {stylesheets.map((href) => <link rel="stylesheet" href={href} />)}
+    <link rel="stylesheet" href="/styles/inter.css" />
+  </head>
+  <body class={bodyClass}>
+    <a class="study-skip" href="#main-content">Skip to content</a>
+    <slot />
+    <script>
+      import { initNavigation } from '../scripts/navigation';
+      import { initMedia } from '../scripts/media';
+      import { initInteractions } from '../scripts/interactions';
+      import { initMotion } from '../scripts/motion';
+      initNavigation();
+      initMedia();
+      initInteractions();
+      initMotion();
+      if (['/blogs', '/customers', '/glossary'].includes(location.pathname))
+        void import('../scripts/collections').then(({ initCollections }) => initCollections());
+    </script>
+  </body>
+</html>

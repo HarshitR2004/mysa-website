@@ -1,0 +1,1598 @@
+
+  a.bad-button { display: none !important; }
+
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+  }
+  .navbar_component.is-hidden { transform: translateY(-100%); }
+  .navbar_component.is-open,
+  .navbar_component.is-over-section { transform: translateY(-100%); }
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mod-1--hidden { display: none !important; }
+@media (max-width: 767px) {
+  #meet-status,
+  #mysa-injected-heading,
+  #meet-link-container { margin-left: -170px !important; }
+  #meet-link-container a,
+  #meet-link-container div {
+    width: fit-content !important;
+    min-width: 200px !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .fignav-container { position: relative; }
+  .fignav-mega-panel {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    z-index: 30 !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-list,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-list {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .fignav-dropdown-wrap:hover > .w-dropdown-toggle,
+  .fignav-dropdown-wrap:focus-within > .w-dropdown-toggle {
+    color: inherit;
+  }
+}
+
+
+/* Customer Stories hover: swap logo + reveal testimonial popup. Scoped to this page only. */
+.cs-image-wrapper:hover .cs-logo-image { opacity: 0; }
+.cs-image-wrapper:hover .cs-logo-image-dark { opacity: 1; }
+.cs-image-wrapper:hover .cs-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Hero email qualifier: keep the error message from pushing the Book a demo button around */
+.hero-v5-email-group {
+  position: relative;
+}
+
+#hero-work-email-error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  white-space: normal;
+  max-width: 100%;
+  z-index: 5;
+}
+
+/* No red fill on the hero email field itself, only on the modal fields */
+#hero-work-email.mysa-input-invalid {
+  background-color: transparent !important;
+}
+
+
+/* 80% page zoom for medium desktop screens */
+@media screen and (min-width: 992px) and (max-width: 1699px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
+
+/* Mobile only — continuously moving top banner */
+@media screen and (max-width: 767px) {
+  .mysa-marquee-track {
+    display: flex !important;
+    width: max-content !important;
+    max-width: none !important;
+    justify-content: flex-start !important;
+    animation: mysaMobileMarquee 40s linear infinite !important;
+  }
+
+  @keyframes mysaMobileMarquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Desktop — keep static */
+@media screen and (min-width: 768px) {
+  .mysa-marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hack9-custom-dot.active .home-builder_sliderdot-image {
+  transform: scale(1.2, 1.2);
+}
+
+.is-disabled {
+ opacity: 0.4;
+}
+
+.nav_dropdown-link:hover .nav_dropdown-icon-wrap {
+background-color: #ffffff !important;
+}
+
+
+
+.hero-v5-heading-line {
+  perspective: 900px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Keep hero-ai-native left-aligned */
+.hero-ai-native {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-v5-heading-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* Only the dynamic word is animated */
+.hero-v5-heading-gradient span {
+  display: inline-block;
+  background-image: inherit;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+
+  will-change: transform, opacity;
+}
+
+/* Vertical slide */
+.hero-v5-heading-gradient span.flip-out {
+  animation: slideOutUp 0.6s cubic-bezier(0.45, 0, 0.2, 1) forwards;
+}
+
+.hero-v5-heading-gradient span.flip-in {
+  animation: slideInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+
+  .hero-v5-headlines {
+    max-width: none;
+    width: 100%;
+  }
+
+  .hero-v5-heading-line {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+
+  .hero-v5-heading-line > div,
+  .hero-v5-heading-gradient,
+  .hero-v5-heading-gradient span {
+    white-space: nowrap;
+  }
+
+  .hero-ai-native {
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+  .hero-v5-heading-line {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    row-gap: 4px;
+    column-gap: 8px;
+
+    width: 100%;
+  }
+
+  .hero-v5-heading-line > div,
+  .hero-v5-heading-gradient {
+    white-space: nowrap;
+    width: auto;
+  }
+
+  /* Let the dynamic word size to its actual text instead of the
+     JS-locked "widest word" width, so the line only wraps when
+     it genuinely doesn't fit */
+  .hero-v5-heading-gradient {
+    width: auto !important;
+  }
+
+  .hero-ai-native {
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 479px) {
+
+  .hero-v5-heading-line {
+    justify-content: flex-start;
+  }
+
+  .hero-ai-native {
+    text-align: left;
+  }
+}
+
+
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.mysa-ticker-wrap {
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  margin: -4px auto 0 auto;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+/* =====================================================
+   STATIC TITLE
+===================================================== */
+
+.mysa-ticker-static {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 auto;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TITLE + LABEL
+===================================================== */
+
+.mysa-ticker-title,
+.mysa-ticker-label {
+
+  font-family: inherit;
+
+  font-weight: 400;
+
+  font-size: 13px;
+
+  line-height: 20px;
+
+  margin: 0;
+
+  white-space: nowrap;
+
+  letter-spacing: normal;
+}
+
+
+/* TITLE */
+
+.mysa-ticker-title {
+
+  color: #171412;
+}
+
+
+/* LABEL */
+
+.mysa-ticker-label {
+
+  color: #57534e;
+}
+
+
+/* =====================================================
+   NUMBERS
+===================================================== */
+
+.mysa-ticker-value-digits,
+.mysa-ticker-value-prefix,
+.mysa-ticker-value-suffix {
+
+  font-family: inherit;
+
+  font-weight: 400;
+
+  font-size: 11px;
+
+  line-height: 18px;
+
+  margin: 0;
+
+  white-space: nowrap;
+
+  letter-spacing: normal;
+
+  color: #171412;
+}
+
+
+/* =====================================================
+   VERTICAL DIVIDER
+===================================================== */
+
+.mysa-ticker-vdivider {
+
+  width: 2px;
+
+  height: 18px;
+
+  border-radius: 9999px;
+
+  background: #d7d3d0;
+
+  flex: 0 0 auto;
+}
+
+
+/* =====================================================
+   SCROLL AREA
+   DESKTOP = ONLY AS WIDE AS CONTENT
+===================================================== */
+
+.mysa-ticker-scroll-area {
+
+  overflow: hidden;
+
+  flex: 0 0 auto;
+
+  position: relative;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   TRACK
+   DESKTOP = STATIC
+===================================================== */
+
+.mysa-ticker-track {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  width: max-content;
+
+  margin: 0;
+
+  animation: none;
+}
+
+
+/* =====================================================
+   TICKER HALF
+===================================================== */
+
+.mysa-ticker-half {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 0;
+
+  flex: 0 0 auto;
+}
+
+
+/* =====================================================
+   STAT
+===================================================== */
+
+.mysa-ticker-stat {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 0 16px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   VALUE PILL
+===================================================== */
+
+.mysa-ticker-value-pill {
+
+  background: #f5f5f4;
+
+  border-radius: 8px;
+
+  padding: 2px 8px;
+
+  min-height: 24px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   PREFIX / SUFFIX
+===================================================== */
+
+.mysa-ticker-value-prefix,
+.mysa-ticker-value-suffix {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  height: 1em;
+
+  flex: 0 0 auto;
+}
+
+
+/* =====================================================
+   NUMBER CONTAINER
+===================================================== */
+
+.mysa-ticker-value-digits {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  height: 1em;
+}
+
+
+/* =====================================================
+   DOT
+===================================================== */
+
+.mysa-ticker-dot {
+
+  width: 4px;
+
+  height: 4px;
+
+  border-radius: 9999px;
+
+  background: #d7d3d0;
+
+  flex: 0 0 auto;
+}
+
+
+/* =====================================================
+   ROLLING DIGITS
+===================================================== */
+
+.mysa-tdigit {
+
+  position: relative;
+
+  display: inline-block;
+
+  width: 0.62em;
+
+  height: 1em;
+
+  overflow: hidden;
+
+  vertical-align: middle;
+
+  flex: 0 0 0.62em;
+}
+
+
+.mysa-tdigit-old,
+.mysa-tdigit-new {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  line-height: 1;
+
+  will-change: transform;
+}
+
+
+.mysa-tdigit-old {
+
+  transform: translateY(0);
+}
+
+
+.mysa-tdigit-new {
+
+  transform: translateY(100%);
+}
+
+
+/* =====================================================
+   SYMBOLS
+===================================================== */
+
+.mysa-tsymbol {
+
+  display: inline-block;
+
+  height: 1em;
+
+  line-height: 1;
+
+  flex: 0 0 auto;
+}
+
+
+/* =====================================================
+   MOBILE SCROLL
+===================================================== */
+
+@keyframes mysaTickerScrollMobile {
+
+  from {
+
+    transform: translate3d(0, 0, 0);
+
+  }
+
+  to {
+
+    transform: translate3d(-50%, 0, 0);
+
+  }
+
+}
+
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 768px) {
+
+  .mysa-ticker-mobile-copy {
+
+    display: none;
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .mysa-ticker-wrap {
+
+    flex-direction: row !important;
+
+    flex-wrap: nowrap !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    margin: 6px auto 0 auto;
+
+    padding: 0;
+
+  }
+
+
+  /* TITLE */
+
+  .mysa-ticker-static {
+
+    margin-right: 10px;
+
+    gap: 8px;
+
+    flex-direction: row !important;
+
+    flex: 0 0 auto;
+
+  }
+
+
+  /* DIVIDER */
+
+  .mysa-ticker-vdivider {
+
+    display: block !important;
+
+    height: 14px;
+
+  }
+
+
+  /* SCROLL WINDOW */
+
+  .mysa-ticker-scroll-area {
+
+    flex: 1 1 auto;
+
+    width: auto;
+
+    min-width: 0;
+
+    display: block;
+
+    overflow: hidden;
+
+    -webkit-mask-image:
+      linear-gradient(
+        90deg,
+        transparent 0,
+        #000 14px,
+        #000 calc(100% - 14px),
+        transparent 100%
+      );
+
+    mask-image:
+      linear-gradient(
+        90deg,
+        transparent 0,
+        #000 14px,
+        #000 calc(100% - 14px),
+        transparent 100%
+      );
+
+  }
+
+
+  /* MOBILE TRACK SCROLLS */
+
+  .mysa-ticker-track {
+
+    flex-direction: row !important;
+
+    margin: 0;
+
+    animation:
+      mysaTickerScrollMobile
+      32s
+      linear
+      infinite;
+
+    will-change: transform;
+
+  }
+
+
+  /* MOBILE TITLE + LABEL */
+
+  .mysa-ticker-title,
+  .mysa-ticker-label {
+
+    font-size: 11px;
+
+    line-height: 16px;
+
+  }
+
+
+  /* MOBILE NUMBERS */
+
+  .mysa-ticker-value-digits,
+  .mysa-ticker-value-prefix,
+  .mysa-ticker-value-suffix {
+
+    font-size: 10px;
+
+    line-height: 14px;
+
+  }
+
+
+  /* MOBILE PILL */
+
+  .mysa-ticker-value-pill {
+
+    min-height: 20px;
+
+    padding: 1px 5px;
+
+  }
+
+
+  /* MOBILE HALF */
+
+  .mysa-ticker-half {
+
+    gap: 0;
+
+    flex-direction: row !important;
+
+  }
+
+
+  /* MOBILE STAT */
+
+  .mysa-ticker-stat {
+
+    gap: 3px;
+
+    padding: 0 8px;
+
+    flex-direction: row !important;
+
+  }
+
+}
+
+
+
+  .hero-dot-ribbon-wrap{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0%;
+    bottom:0;
+    z-index:0;
+    pointer-events:none;
+    overflow:hidden;
+    background:transparent;
+  }
+  .hero-dot-ribbon-rotate{
+    position:relative;
+    width:100%;
+    height:100%;
+  }
+  #hero-dot-ribbon-svg{
+    position:absolute;
+    inset:0;
+    background:transparent;
+  }
+  #hero-dot-ribbon-svg svg{
+    display:block;
+    width:100%;
+    height:auto;
+    background:transparent;
+  }
+@media (max-width: 767px){
+  #hero-dot-ribbon-svg svg{
+    transform: scale(1.7) translateY(60%);
+    transform-origin: 50% 30%;
+  }
+}
+
+
+  #cs-stories-stage {
+    position: relative;
+  }
+
+  #cs-stories-stage #cs-card-a {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  #cs-stories-stage #cs-card-b,
+  #cs-stories-stage #cs-card-c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .cs-content-container .cs-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 1.1s cubic-bezier(.45,0,.2,1);
+    will-change: opacity;
+  }
+
+  .cs-content-container .cs-content-container.cs-content-is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  .cs-logo-group .cs-logo-group.cs-logo-is-visible {
+    display: flex;
+  }
+
+  /* =========================================================
+     MINI ICON
+     ========================================================= */
+
+  .cs-logo-group {
+    align-items: center !important;
+  }
+
+  .cs-logo-group .mini-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+  }
+
+
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+
+  .cs-mobile-logo-grid {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+
+    #cs-stories-stage #cs-logo-stage-left,
+    #cs-stories-stage #cs-logo-stage-right {
+      display: none !important;
+    }
+
+    #cs-stories-stage .cs-cards-container {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .cs-mobile-logo-grid {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .cs-mobile-logo-cell {
+      width: 50% !important;
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+      box-sizing: border-box !important;
+      height: 110px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      border-right: 1px solid #e7e5e4;
+      border-bottom: 1px solid #e7e5e4;
+      padding: 0 !important;
+      margin: 0 !important;
+      position: relative !important;
+      float: none !important;
+    }
+
+    /* Every mobile logo layer stays mounted, stacked on top of each other. */
+    .cs-mobile-logo-cell .cs-mobile-logo-layer {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      opacity: 0;
+      pointer-events: none;
+      overflow: hidden !important;
+    }
+
+    .cs-mobile-logo-cell .cs-mobile-logo-layer.cs-mobile-logo-active {
+      opacity: 1;
+    }
+
+    /* Mobile logo animation is controlled by JavaScript. */
+    .cs-mobile-logo-cell .cs-mobile-logo-layer img,
+    .cs-mobile-logo-cell .cs-mobile-logo-layer .cs-logo-image,
+    .cs-mobile-logo-cell .cs-mobile-logo-layer .mini-icon {
+      transition: none !important;
+    }
+
+    .cs-mobile-logo-cell .cs-mobile-logo-layer .cs-image-wrapper {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .cs-mobile-logo-cell img {
+      max-width: 70% !important;
+      max-height: 40px !important;
+      width: auto !important;
+      height: auto !important;
+      object-fit: contain !important;
+    }
+
+    .cs-mobile-logo-cell .cs-popup,
+    .cs-mobile-logo-cell .cs-logo-image-dark {
+      display: none !important;
+    }
+
+    #cs-stories-stage .cs-content-container {
+      display: block !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      margin-top: 12px !important;
+    }
+  }
+
+
+.logo-carousel-popup {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s ease;
+
+  position: fixed !important;
+  bottom: auto !important;
+  right: auto !important;
+
+  max-height: none !important;
+}
+
+.logo-carousel-popup.logo-carousel-popup-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+.onboarding-dot-ribbon-wrap{
+  position:absolute;
+  left:520px;       /* moved ~41px left */
+  top:-420px;       /* moved ~40px up */
+  width:1019.28px;
+  height:1019.28px;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+}
+
+  @media (max-width: 767px){
+  .onboarding-dot-ribbon-wrap{
+    left: 50%;
+    top: -380px;
+    width: 500px;
+    height: 500px;
+    transform: translateX(-50%);
+  }
+}
+
+.onboarding-dot-ribbon-rotate{
+  position:relative;
+  width:861.534px;
+  height:861.534px;
+  /* Horizontal mirror (keeps cyan top-left, green bottom-right), then
+     rotated 50deg counter-clockwise on top of that mirrored result.
+     Order matters: rotate must come first in the list so it applies
+     last, on the already-mirrored shape, rather than mirroring a
+     pre-rotated one (which would look different). */
+  transform:rotate(8deg) scaleX(-1);
+  flex-shrink:0;
+}
+#onboarding-dot-ribbon-svg{
+  position:absolute;
+  inset:0;
+  background:transparent;
+}
+#onboarding-dot-ribbon-svg svg{
+  display:block;
+  width:100%;
+  height:100%;
+  background:transparent;
+}
+
+
+.topleft-dot-ribbon-wrap{
+  position:absolute;
+  left:-300px;
+  top:-240px;
+  width:600px;
+  height:600px;
+  z-index:0;
+  pointer-events:none;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+}
+@media (max-width: 767px){
+  .topleft-dot-ribbon-wrap{
+    display: none;
+  }
+}
+.topleft-dot-ribbon-rotate{
+  position:relative;
+  width:100%;
+  height:100%;
+  /* No rotation, no mirror — kept as the SVG was originally authored. */
+  flex-shrink:0;
+}
+#topleft-dot-ribbon-svg{
+  position:absolute;
+  inset:0;
+  background:transparent;
+}
+#topleft-dot-ribbon-svg svg{
+  display:block;
+  width:100%;
+  height:100%;
+  background:transparent;
+}
+
+
+.yt-modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+  display: none; align-items: center; justify-content: center;
+  z-index: 999999; padding: 40px;
+}
+.yt-modal-overlay.active { display: flex; }
+.yt-modal-box {
+  position: relative; width: 100%; max-width: 1100px;
+  background: #000; border-radius: 8px; overflow: hidden;
+}
+.yt-modal-box::before { content: ""; display: block; padding-top: 56.25%; }
+.yt-modal-box iframe {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; border: 0;
+}
+.yt-modal-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1000000;
+}
+.yt-modal-close:hover { opacity: 0.7; }
+
+/* Robust scroll lock (works on iOS Safari, unlike overflow:hidden alone) */
+body.yt-modal-open {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  overflow: hidden !important;
+  width: 100%;
+}
+
+
+  .get-started-dot-ribbon-wrap{
+    position:absolute;
+    left:-300px;
+    top:-600px;
+    width:1652px;
+    height:1214px;
+    z-index:0;
+    pointer-events:none;
+    overflow:hidden;
+    background:transparent;
+  }
+@media (max-width: 767px){
+  .get-started-dot-ribbon-wrap{
+    left:-238px;
+    top:-800px;
+  }
+}
+  .get-started-dot-ribbon-rotate{
+    position:relative;
+    width:100%;
+    height:100%;
+  }
+  #get-started-dot-ribbon-svg{
+    position:absolute;
+    inset:0;
+    background:transparent;
+  }
+#get-started-dot-ribbon-svg svg{
+  display:block;
+  width:100%;
+  height:100%;
+  background:transparent;
+}
+
+
+  .live-dot-wrap {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #047857;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .live-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #047857;
+    animation: heartbeat 1.6s ease-out infinite;
+    opacity: 0.7;
+  }
+  @keyframes heartbeat {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(2.4);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+  }
+
+
+.modules_menu-link.w--current .modules_menu-link-text {
+  color: #000;
+}
+
+.modules_menu-link.w--current svg,
+.modules_menu-link.w--current svg path {
+  color: #007466;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mod-1--hidden {
+  display: none !important;
+}
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #18181A99;
+  z-index: 1100;
+}
+
+.mod-1 {
+  z-index: 1101 !important;
+}
+
+/* ─── Navbar z-index override during modal (commented out) ──────────────────
+body.modal-open .navbar_component,
+body.modal-open [nav-component] {
+  z-index: 999 !important;
+}
+─────────────────────────────────────────────────────────────────────────── */
+
+/* Robust scroll lock (works on iOS Safari, unlike overflow:hidden alone) */
+body.modal-open {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  overflow: hidden !important;
+  width: 100%;
+}
+
+#meet-link-container {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 767px) {
+  #meet-status,
+  #mysa-injected-heading {
+    margin-left: -170px !important;
+  }
+
+  #meet-link-container {
+    margin-left: 0px !important;
+  }
+}
+
+.mysa-field-error {
+  color: #e53e3e;
+  font-size: 11px;
+  margin-top: 4px;
+  margin-left: 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+}
+
+.mysa-input-invalid {
+  border-color: #e53e3e !important;
+  outline-color: #e53e3e !important;
+  background-color: #FEF2F2 !important;
+}
+
+/* Page-scoped fix: the form_type field renders visibly in this page's modal copy; force-hide it */
+input[name="form_type"] {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+
+[data-el="top-banner"] {
+  will-change: opacity;
+  transition: opacity 0.5s ease;
+}
+
+.navbar_component {
+  top: 0 !important;
+  will-change: transform;
+  transition: transform 0.5s ease;
+}

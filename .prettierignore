@@ -1,0 +1,10 @@
+node_modules
+dist
+.astro
+reference
+reports
+public
+src/data
+scripts/local
+README.md
+package-lock.json
